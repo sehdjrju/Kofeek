@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофеёк у Аселёк — Уютная кофейня</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: #f5f0e8;
+            color: #3d2914;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(rgba(61, 41, 20, 0.7), rgba(61, 41, 20, 0.7)), 
+                        url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #6b4423;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #d4a574;
+            padding-bottom: 10px;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px dashed #d4a574;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .price {
+            color: #6b4423;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .contact {
+            text-align: center;
+            background: #6b4423;
+            color: white;
+        }
+        
+        .contact h2 {
+            color: white;
+            border-bottom-color: #d4a574;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .hours {
+            background: #d4a574;
+            color: #3d2914;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #6b4423;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .menu-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>☕ Кофеёк у Аселёк</h1>
+        <p>Уют, тепло и лучший кофе в городе</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>🍽 Наше меню</h2>
+            
+            <div class="menu-item">
+                <span>Эспрессо</span>
+                <span class="price">800 ₸</span>
+            </div>
+            <div class="menu-item">
+                <span>Американо</span>
+                <span class="price">900 ₸</span>
+            </div>
+            <div class="menu-item">
+                <span>Капучино</span>
+                <span class="price">1 200 ₸</span>
+            </div>
+            <div class="menu-item">
+                <span>Латте (классический/карамельный)</span>
+                <span class="price">1 400 ₸</span>
+            </div>
+            <div class="menu-item">
+                <span>Раф (ванильный/кокосовый)</span>
+                <span class="price">1 600 ₸</span>
+            </div>
+            <div class="menu-item">
+                <span>Флэт Уайт</span>
+                <span class="price">1 300 ₸</span>
+            </div>
+            <div class="menu-item">
+                <span>Десерт дня (чизкейк/тирамису)</span>
+                <span class="price">1 800 ₸</span>
+            </div>
+        </div>
+
+        <div class="section hours">
+            <h2>🕐 Часы работы</h2>
+            <p><strong>Пн-Пт:</strong> 08:00 — 21:00</p>
+            <p><strong>Сб-Вс:</strong> 09:00 — 22:00</p>
+        </div>
+
+        <div class="section contact">
+            <h2>📍 Как нас найти</h2>
+            <p>г. Алматы, проспект Назарбаева, 123</p>
+            <p>(возле ТРЦ "Mega")</p>
+            <br>
+            <p>📞 Телефон: +7 (777) 123-45-67</p>
+            <br>
+            <a href="https://wa.me/77771234567" class="whatsapp-btn" target="_blank">
+                💬 Написать в WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2024 Кофеёк у Аселёк. Сделано с ❤️</p>
+    </footer>
+
+</body>
+</html>
